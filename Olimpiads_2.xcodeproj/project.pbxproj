@@ -17,7 +17,6 @@
 		B6FB21FA21BBA7850090BF77 /* UniversitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21F921BBA7850090BF77 /* UniversitiesViewController.swift */; };
 		B6FB21FC21BBB8050090BF77 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21FB21BBB8050090BF77 /* CollectionViewCell.swift */; };
 		B6FB220821BEB2F30090BF77 /* Olimpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB220721BEB2F30090BF77 /* Olimpad.swift */; };
-		B6FB220C21BEE29D0090BF77 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB220B21BEE29D0090BF77 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		B6FB220521BBE9D90090BF77 /* lomonosov.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lomonosov.jpg; sourceTree = "<group>"; };
 		B6FB220621BBE9DB0090BF77 /* ВысшаяПроба.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ВысшаяПроба.png"; sourceTree = "<group>"; };
 		B6FB220721BEB2F30090BF77 /* Olimpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olimpad.swift; sourceTree = "<group>"; };
-		B6FB220B21BEE29D0090BF77 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 				B6FB21F721BBA4150090BF77 /* OlympiadsViewController.swift */,
 				B6FB220721BEB2F30090BF77 /* Olimpad.swift */,
 				B6FB21FB21BBB8050090BF77 /* CollectionViewCell.swift */,
-				B6FB220B21BEE29D0090BF77 /* TableViewCell.swift */,
 				B6FB21F921BBA7850090BF77 /* UniversitiesViewController.swift */,
 				B6FB21E221BB9EA80090BF77 /* Main.storyboard */,
 				B6FB220321BBE9CD0090BF77 /* Photoes */,
@@ -168,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6FB21F621BBA1DE0090BF77 /* MainTabBarViewController.swift in Sources */,
-				B6FB220C21BEE29D0090BF77 /* TableViewCell.swift in Sources */,
 				B6FB21F821BBA4150090BF77 /* OlympiadsViewController.swift in Sources */,
 				B6FB220821BEB2F30090BF77 /* Olimpad.swift in Sources */,
 				B6FB21FC21BBB8050090BF77 /* CollectionViewCell.swift in Sources */,

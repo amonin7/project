@@ -8,33 +8,9 @@
 
 import UIKit
 
-class OlympiadsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, UISearchResultsUpdating, UITableViewDataSource, UITableViewDelegate{
+class OlympiadsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, UISearchResultsUpdating{
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if isFiltering()
-        {
-            return filteredOlympiads.count
-        }
-        return  olympiads.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-        let olimpiad : Olimpiad
-        //modernize cell:
-        //cell.nameOfOlympiadLabel.text = olympiads[indexPath.item]
-        if isFiltering(){
-            olimpiad = filteredOlympiads[indexPath.item]
-        }
-        else
-        {
-            olimpiad = olympiads[indexPath.item]
-        }
-        cell.nameOfOlimpiad.text = olimpiad.name
-     
-        return cell
-    }
-    
+
    
     
    
@@ -67,7 +43,9 @@ class OlympiadsViewController: UIViewController, UICollectionViewDelegate, UICol
         ]
         
         
-        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
         
         
         //create SearchBar in head of tableView:
