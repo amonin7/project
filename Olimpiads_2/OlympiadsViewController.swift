@@ -27,28 +27,32 @@ class OlympiadsViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
+    let testContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let searchController = UISearchController(searchResultsController: nil)
-    
+    var olmpArray = [Olymps]()
     var filteredOlympiads = [Olimpiad]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let curs = Olymps(context: self.testContext)
+        curs.image = "lom.jpg"
+        curs.level = true
+        curs.name = "hse"
+        olmpArray.append(curs)
+        let testImg : UIImage = UIImage(named: olmpArray[0].image!)!
+        
         
         olympiads = [
             Olimpiad(name: "Высшая проба", image:#imageLiteral(resourceName: "ВысшаяПроба.png") ),
             Olimpiad(name: "Олимпиада Ломаносова", image:#imageLiteral(resourceName: "lomonosov.jpg") ),
-            Olimpiad(name: "Турлом", image:#imageLiteral(resourceName: "lom.jpg") )
+            Olimpiad(name: "Турлом", image: testImg )
         ]
         
-        
+         //create SearchBar in head of tableView:
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
-        
-        
-        //create SearchBar in head of tableView:
         tableView.tableHeaderView = searchController.searchBar
         
       
@@ -147,7 +151,6 @@ class OlympiadsViewController: UIViewController, UICollectionViewDelegate, UICol
 //    }
 //
     
-    
-    
+  
     
 }
