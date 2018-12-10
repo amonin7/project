@@ -8,22 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		B6FB21DF21BB9EA80090BF77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21DE21BB9EA80090BF77 /* AppDelegate.swift */; };
-		B6FB21E121BB9EA80090BF77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21E021BB9EA80090BF77 /* ViewController.swift */; };
 		B6FB21E421BB9EA80090BF77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FB21E221BB9EA80090BF77 /* Main.storyboard */; };
 		B6FB21E721BB9EA80090BF77 /* Olimpiads_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21E521BB9EA80090BF77 /* Olimpiads_2.xcdatamodeld */; };
 		B6FB21E921BB9EA90090BF77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FB21E821BB9EA90090BF77 /* Assets.xcassets */; };
 		B6FB21EC21BB9EA90090BF77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FB21EA21BB9EA90090BF77 /* LaunchScreen.storyboard */; };
+		B6FB21F621BBA1DE0090BF77 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21F521BBA1DE0090BF77 /* MainTabBarViewController.swift */; };
+		B6FB21F821BBA4150090BF77 /* OlympiadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21F721BBA4150090BF77 /* OlympiadsViewController.swift */; };
+		B6FB21FA21BBA7850090BF77 /* UniversitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21F921BBA7850090BF77 /* UniversitiesViewController.swift */; };
+		B6FB21FC21BBB8050090BF77 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21FB21BBB8050090BF77 /* CollectionViewCell.swift */; };
+		B6FB220821BEB2F30090BF77 /* Olimpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB220721BEB2F30090BF77 /* Olimpad.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B6FB21DB21BB9EA80090BF77 /* Olimpiads_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olimpiads_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FB21DE21BB9EA80090BF77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6FB21E021BB9EA80090BF77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B6FB21E321BB9EA80090BF77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6FB21E621BB9EA80090BF77 /* Olimpiads_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Olimpiads_2.xcdatamodel; sourceTree = "<group>"; };
 		B6FB21E821BB9EA90090BF77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6FB21EB21BB9EA90090BF77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6FB21ED21BB9EA90090BF77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6FB21F521BBA1DE0090BF77 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		B6FB21F721BBA4150090BF77 /* OlympiadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlympiadsViewController.swift; sourceTree = "<group>"; };
+		B6FB21F921BBA7850090BF77 /* UniversitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesViewController.swift; sourceTree = "<group>"; };
+		B6FB21FB21BBB8050090BF77 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		B6FB220421BBE9D60090BF77 /* lom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lom.jpg; sourceTree = "<group>"; };
+		B6FB220521BBE9D90090BF77 /* lomonosov.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lomonosov.jpg; sourceTree = "<group>"; };
+		B6FB220621BBE9DB0090BF77 /* ВысшаяПроба.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ВысшаяПроба.png"; sourceTree = "<group>"; };
+		B6FB220721BEB2F30090BF77 /* Olimpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olimpad.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +68,29 @@
 			isa = PBXGroup;
 			children = (
 				B6FB21DE21BB9EA80090BF77 /* AppDelegate.swift */,
-				B6FB21E021BB9EA80090BF77 /* ViewController.swift */,
+				B6FB21F521BBA1DE0090BF77 /* MainTabBarViewController.swift */,
+				B6FB21F721BBA4150090BF77 /* OlympiadsViewController.swift */,
+				B6FB220721BEB2F30090BF77 /* Olimpad.swift */,
+				B6FB21FB21BBB8050090BF77 /* CollectionViewCell.swift */,
+				B6FB21F921BBA7850090BF77 /* UniversitiesViewController.swift */,
 				B6FB21E221BB9EA80090BF77 /* Main.storyboard */,
+				B6FB220321BBE9CD0090BF77 /* Photoes */,
 				B6FB21E821BB9EA90090BF77 /* Assets.xcassets */,
 				B6FB21EA21BB9EA90090BF77 /* LaunchScreen.storyboard */,
 				B6FB21ED21BB9EA90090BF77 /* Info.plist */,
 				B6FB21E521BB9EA80090BF77 /* Olimpiads_2.xcdatamodeld */,
 			);
 			path = Olimpiads_2;
+			sourceTree = "<group>";
+		};
+		B6FB220321BBE9CD0090BF77 /* Photoes */ = {
+			isa = PBXGroup;
+			children = (
+				B6FB220621BBE9DB0090BF77 /* ВысшаяПроба.png */,
+				B6FB220421BBE9D60090BF77 /* lom.jpg */,
+				B6FB220521BBE9D90090BF77 /* lomonosov.jpg */,
+			);
+			path = Photoes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FB21F621BBA1DE0090BF77 /* MainTabBarViewController.swift in Sources */,
+				B6FB21F821BBA4150090BF77 /* OlympiadsViewController.swift in Sources */,
+				B6FB220821BEB2F30090BF77 /* Olimpad.swift in Sources */,
+				B6FB21FC21BBB8050090BF77 /* CollectionViewCell.swift in Sources */,
 				B6FB21E721BB9EA80090BF77 /* Olimpiads_2.xcdatamodeld in Sources */,
-				B6FB21E121BB9EA80090BF77 /* ViewController.swift in Sources */,
+				B6FB21FA21BBA7850090BF77 /* UniversitiesViewController.swift in Sources */,
 				B6FB21DF21BB9EA80090BF77 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
