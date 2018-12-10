@@ -8,14 +8,31 @@
 
 import UIKit
 
-class OlympiadsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, UISearchResultsUpdating, UITableViewDataSource, UITableViewDelegat{
+class OlympiadsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, UISearchResultsUpdating, UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        if isFiltering()
+        {
+            return filteredOlympiads.count
+        }
+        return  olympiads.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        let olimpiad : Olimpiad
+        //modernize cell:
+        //cell.nameOfOlympiadLabel.text = olympiads[indexPath.item]
+        if isFiltering(){
+            olimpiad = filteredOlympiads[indexPath.item]
+        }
+        else
+        {
+            olimpiad = olympiads[indexPath.item]
+        }
+        cell.nameOfOlimpiad.text = olimpiad.name
+     
+        return cell
     }
     
    
