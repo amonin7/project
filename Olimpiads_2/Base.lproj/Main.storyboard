@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="945" y="-73"/>
         </scene>
-        <!--View Controller-->
+        <!--Favourite View Controller-->
         <scene sceneID="aBi-FS-B0S">
             <objects>
-                <viewController id="esn-FX-7SP" sceneMemberID="viewController">
+                <viewController id="esn-FX-7SP" customClass="favouriteViewController" customModule="Olimpiads_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P84-dK-phs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
