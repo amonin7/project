@@ -20,6 +20,8 @@ class OlympiadsViewController: UIViewController, UICollectionViewDelegate, UICol
    // let olympiads : [String] = ["Высшая проба", "Олимпиада Ломаносова", "Турлом" ]
   //  let images : [UIImage] = [#imageLiteral(resourceName: "ВысшаяПроба.png"),#imageLiteral(resourceName: "lomonosov.jpg"),#imageLiteral(resourceName: "lom.jpg")]
     
+    var olmpArray = [Olymps]()
+    let testContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     
 
@@ -27,9 +29,7 @@ class OlympiadsViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let testContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let searchController = UISearchController(searchResultsController: nil)
-    var olmpArray = [Olymps]()
     var filteredOlympiads = [Olimpiad]()
     
     override func viewDidLoad() {

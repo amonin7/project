@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2EE26CA821C0579800991A25 /* favouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE26CA721C0579800991A25 /* favouriteViewController.swift */; };
+		2EE26CAA21C1080E00991A25 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE26CA921C1080E00991A25 /* data.swift */; };
+		2EE26CAC21C1096400991A25 /* dataclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE26CAB21C1096400991A25 /* dataclass.swift */; };
 		B6FB21DF21BB9EA80090BF77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21DE21BB9EA80090BF77 /* AppDelegate.swift */; };
 		B6FB21E421BB9EA80090BF77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FB21E221BB9EA80090BF77 /* Main.storyboard */; };
 		B6FB21E721BB9EA80090BF77 /* Olimpiads_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6FB21E521BB9EA80090BF77 /* Olimpiads_2.xcdatamodeld */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		2EE26CA721C0579800991A25 /* favouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favouriteViewController.swift; sourceTree = "<group>"; };
+		2EE26CA921C1080E00991A25 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		2EE26CAB21C1096400991A25 /* dataclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataclass.swift; sourceTree = "<group>"; };
 		B6FB21DB21BB9EA80090BF77 /* Olimpiads_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olimpiads_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FB21DE21BB9EA80090BF77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6FB21E321BB9EA80090BF77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				B6FB21FB21BBB8050090BF77 /* CollectionViewCell.swift */,
 				B6FB21F921BBA7850090BF77 /* UniversitiesViewController.swift */,
 				B6FB21E221BB9EA80090BF77 /* Main.storyboard */,
+				2EE26CA921C1080E00991A25 /* data.swift */,
+				2EE26CAB21C1096400991A25 /* dataclass.swift */,
 				2EE26CA721C0579800991A25 /* favouriteViewController.swift */,
 				B6FB220321BBE9CD0090BF77 /* Photoes */,
 				B6FB21E821BB9EA90090BF77 /* Assets.xcassets */,
@@ -167,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE26CAC21C1096400991A25 /* dataclass.swift in Sources */,
 				B6FB21F621BBA1DE0090BF77 /* MainTabBarViewController.swift in Sources */,
 				B6FB21F821BBA4150090BF77 /* OlympiadsViewController.swift in Sources */,
 				B6FB220821BEB2F30090BF77 /* Olimpad.swift in Sources */,
@@ -174,6 +181,7 @@
 				2EE26CA821C0579800991A25 /* favouriteViewController.swift in Sources */,
 				B6FB21E721BB9EA80090BF77 /* Olimpiads_2.xcdatamodeld in Sources */,
 				B6FB21FA21BBA7850090BF77 /* UniversitiesViewController.swift in Sources */,
+				2EE26CAA21C1080E00991A25 /* data.swift in Sources */,
 				B6FB21DF21BB9EA80090BF77 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
